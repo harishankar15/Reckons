@@ -6,7 +6,5 @@ class addstockModel(models.Model):
     productname = models.CharField(max_length=20)
     availableBags = models.IntegerField()
     availablePieces = models.BigIntegerField()
-  
-
     def __str__(self):
-        return self.productname
+        return self.brandname
