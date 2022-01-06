@@ -21,6 +21,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR,"media")
 STATIC_DIR = os.path.join(BASE_DIR, "static")
 
 STATIC_DIR_addstock = os.path.join(os.path.join(BASE_DIR, "addstock"), "static")
+STATIC_DIR_adduser = os.path.join(os.path.join(BASE_DIR, "adduser"), "static")
 
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
@@ -45,7 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles', 'addstock',
+    'django.contrib.staticfiles', 'addstock','adduser'
 ]
 
 MIDDLEWARE = [
@@ -133,7 +134,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [STATIC_DIR_addstock]
+STATICFILES_DIRS = [STATIC_DIR_addstock, STATIC_DIR_adduser]
 MEDIA_URL = '/media/'
 
 # Default primary key field type

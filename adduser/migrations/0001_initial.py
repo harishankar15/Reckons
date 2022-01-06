@@ -12,13 +12,14 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='addstockModel',
+            name='adduserModel',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('brandname', models.CharField(max_length=20)),
-                ('productname', models.CharField(max_length=20)),
-                ('availableBags', models.IntegerField()),
-                ('availablePieces', models.BigIntegerField()),
+                ('name', models.CharField(max_length=20)),
+                ('address', models.CharField(max_length=50)),
+                ('contactNumber', models.BigIntegerField()),
+                ('username', models.CharField(max_length=20)),
+                ('password', models.CharField(max_length=20)),
             ],
         ),
     ]

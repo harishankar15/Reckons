@@ -22,6 +22,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('addstock/', include('addstock.urls')),
+    path('adduser/', include('adduser.urls')),
 ]
 
 if settings.DEBUG:
