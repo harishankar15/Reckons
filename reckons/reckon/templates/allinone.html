@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Reckons</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+<nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <button class="nav-link active" id="nav-addproduct-tab" data-bs-toggle="tab" data-bs-target="#nav-addproduct" type="button" role="tab" aria-controls="nav-addproduct" aria-selected="true">Add Product</button>
+    <button class="nav-link" id="nav-addstock-tab" data-bs-toggle="tab" data-bs-target="#nav-addstock" type="button" role="tab" aria-controls="nav-addstock" aria-selected="true">Add Stock</button>
+    <button class="nav-link" id="nav-addoutlet-tab" data-bs-toggle="tab" data-bs-target="#nav-addoutlet" type="button" role="tab" aria-controls="nav-addoutlet" aria-selected="true">Add Outlet</button>
+	    <button class="nav-link" id="nav-adduser-tab" data-bs-toggle="tab" data-bs-target="#nav-adduser" type="button" role="tab" aria-controls="nav-adduser" aria-selected="true">Add User</button>
+  </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-addproduct-tab">
+  <div style="width:1000px; position: absolute; margin-left:200px;margin-top:200px;">
+<div class="p-3 mb-2 bg-dark text-white" style="text-align:center;">Add Product</div>
+<div class="p-3 mb-2 bg-light text-dark">
+<div class="row g-3">
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Brand Name" aria-label="Brand Name">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Product Code" aria-label="Product Code">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Product name" aria-label="Product name">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Product Price" aria-label="Product Price">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Actual Price" aria-label="Actual Price">
+  </div>
+  <button type="button" class="btn btn-primary" style="width:100px; ">Add</button>
+  <button type="button" class="btn btn-secondary">Cancel</button>
+</div>
+</div>
+</div>  
+  </div>
+  
+  
+  <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-addstock-tab">
+  <div style="width:1000px; position: absolute; margin-left:200px;margin-top:200px;">
+<div class="p-3 mb-2 bg-dark text-white" style="text-align:center;">Add Stocks</div>
+<div class="p-3 mb-2 bg-light text-dark">
+<div class="row g-3">
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Brand Name" aria-label="Brand Name">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Product name" aria-label="Product name">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Available Bags" aria-label="Available Bags">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Available Pieces" aria-label="Available Pieces">
+  </div>
+  <button type="button" class="btn btn-primary" style="width:100px; ">Add</button>
+  <button type="button" class="btn btn-secondary">Cancel</button>
+</div>
+</div>
+</div> 
+  </div>
+  
+  
+  <div class="tab-pane fade show active" id="nav-contact" role="tabpanel" aria-labelledby="nav-addoutlet-tab">
+  <div style="width:1000px; position: absolute; margin-left:200px;margin-top:200px;">
+<div class="p-3 mb-2 bg-dark text-white" style="text-align:center;">Add Outlet</div>
+<div class="p-3 mb-2 bg-light text-dark">
+<div class="row g-3">
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Owner Name" aria-label="Owner Name">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Shop Name" aria-label="Shop Name">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Address" aria-label="Address">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Contact Number" aria-label="Contact Number">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Credit limit" aria-label="Credit limit">
+  </div>
+  <button type="button" class="btn btn-primary" style="width:100px; ">Add</button>
+  <button type="button" class="btn btn-secondary">Cancel</button>
+</div>
+</div>
+</div>
+  </div>
+  
+  
+  <div class="tab-pane fade show active" id="nav-contact" role="tabpanel" aria-labelledby="nav-adduser-tab">
+  <div style="width:1000px; position: absolute; margin-left:200px;margin-top:200px;">
+<div class="p-3 mb-2 bg-dark text-white" style="text-align:center;">Add User</div>
+<div class="p-3 mb-2 bg-light text-dark">
+<div class="row g-3">
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Name" aria-label="Name">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Address" aria-label="Address">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Contact Number" aria-label="Contact Number">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Password" aria-label="Password">
+  </div>
+  <button type="button" class="btn btn-primary" style="width:100px; ">Add</button>
+  <button type="button" class="btn btn-secondary">Cancel</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
