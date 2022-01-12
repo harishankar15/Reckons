@@ -16,27 +16,21 @@
  
   <div class="row g-3">
   <div class="col">
-    <select class="form-control form-control-sm">
+    <select class="form-control form-control-sm" name="bndname">
       <option>Select Brand</option>
       {% for pro in bra%}
-        <option name="bndname" value = {{pro.brandname}} >{{pro.brandname}}</option>
+        <option>{{pro.brandname}}</option>
       {% endfor %}
     </select>
   </div>
   <div class="col">
-    <select class="form-control form-control-sm">
+    <select class="form-control form-control-sm" name="prodname">
       <option>Select Product</option>
       {% for pro in bra%}
-      <option name="prodname">{{pro.productname}}</option>
+      <option>{{pro.productname}}</option>
      {% endfor %}
     </select>
   </div>
-  <!-- <div class="col">
-    <input type="text" name="bndname" class="form-control" placeholder="Brand name" aria-label="Available Bags">
-  </div>
-  <div class="col">
-    <input type="text" name="prodname" class="form-control" placeholder="Product" aria-label="Available Bags">
-  </div> -->
   <div class="col">
     <input type="text" name="availbag" class="form-control" placeholder="Available Bags" aria-label="Available Bags">
   </div>
